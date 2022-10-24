@@ -1,0 +1,51 @@
+@import url("header.css");
+@import url("banner.css");
+@import url("carousel.css");
+@import url("topics.css");
+@import url("contact.css");
+@import url("footer.css");
+
+:root {
+    --bg-primary: #EBECEE;
+    --bg-secondary: #E5E5E5;
+    --bg-tertiary: #F9F9F9;
+
+    --primary-color: #EB9B00;
+    --secondary-color: #002F52;
+    --tertiary-color: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+
+    --color-white: #FFFFFF;
+    --color-text: #000000D9;
+    --color-gray: #858585;
+    --primary-font: "Poppins";
+    --secondary-font: "Josefin Sans";
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #15191c70;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-track:hover {
+    background: #15191c;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+body {
+    background-color: var(--bg-primary);
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-weight: 400;
+}

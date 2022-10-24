@@ -1,0 +1,83 @@
+.contact {
+    text-align: center;
+    background: var(--color-white);
+    padding: 1.5rem 1.5rem;
+}
+
+.contact--title,
+.contact--text {
+    line-height: 24px;
+    background: var(--tertiary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.contact--title {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.contact--text {
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+}
+
+.contact--email {
+    font-family: var(--primary-font);
+    line-height: 24px;
+    height: fit-content;
+    background-color: transparent;
+    border: 1px solid var(--secondary-color);
+    border-radius: 1.5rem;
+    color: var(--color-text);
+    padding: 0.5rem 1.5rem;
+    width: 90%;
+}
+
+
+.contact--email::placeholder {
+    font-family: var(--primary-font);
+    color: var(--secondary-color);
+    background: url("../img/Email.svg") no-repeat;
+    padding-left: 3rem;
+    background-position: 1rem;
+}
+
+.contact--email:focus::placeholder {
+    color: transparent;
+    background: none;
+}
+
+
+
+@media screen and (min-width:1024px) {
+    .contact {
+        display: flex;
+        justify-content: center;
+        align-content:center;
+        padding: 2rem 15%;
+        text-align: left;
+    }
+
+    .contact-body {
+        display: block;
+    }
+
+    .contact--title {
+        font-size: 24px;
+        margin-bottom: 1.125rem;
+    }
+
+    .contact--email {
+        align-self: center;
+        width: 80%;
+    }
+
+}
+@media screen and (min-width: 1728px) {
+    .contact {
+        padding: 4rem 15%;
+    }
+}

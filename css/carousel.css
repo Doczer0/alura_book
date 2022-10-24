@@ -1,0 +1,161 @@
+.carousel {
+    background-color: var(--bg-primary);
+}
+
+.carousel--title {
+    background-color: var(--color-white);
+    color: var(--primary-color);
+    text-align: center;
+    padding: 1.25em 0 0.5em 0;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: 0.7em 0 1em;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    display: none;
+}
+
+.card {
+    margin: 1.25em 1.5em;
+    padding: 1em 1em;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.card-body {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.card-control {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-control ul {
+    display: flex;
+}
+
+.card--extra {
+    color: var(--primary-color);
+    font-weight: 700;
+    padding-bottom: 0.5em;
+}
+
+.card--title {
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 18px;
+    padding-bottom: 0.5em;
+}
+
+.card--desc {
+    color: var(--color-text);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.card--img {
+    padding-left: 1em;
+}
+
+.card-item--btn {
+    width: 48px;
+    height: 48px;
+    margin: 0 0.5em;
+}
+
+.card--button {
+    font-weight: 700;
+    color: var(--color-white);
+    text-decoration: none;
+    line-height: 24px;
+    background-color: var(--primary-color);
+    padding: 0.75em 2.2em;
+}
+
+@media screen and (min-width: 1024px) {
+    .carousel--title {
+        padding: 2.75rem 0 1rem 0;
+        font-size: 26px;
+    }
+
+    .swiper {
+        width: 60%;
+    }
+
+    .swiper-slide{
+        transition: 1s all;
+        cursor: pointer;
+    }
+
+    .swiper-slide:hover{
+        transform: scale(1.05);
+    }
+
+    .swiper-pagination {
+        margin: 2rem 0 3rem 0;
+    }
+
+    .card {
+        margin: 3.75em 25%;
+        transition: 1s all;
+    }
+
+    .card:hover{
+        transform: translateY(20px);
+        box-shadow: 0px .5rem 1rem 0 var(--color-text);
+    }
+
+
+
+@media screen and (min-width: 1728px) {
+    .carousel-container {
+        display: flex;
+        margin: 0 15vw;
+        align-items: center;
+    }
+
+    .card--extra {
+        font-size: 32px;
+    }
+
+    .card--title {
+        font-size: 18px;
+    }
+
+    .card--desc {
+        font-size: 16px;
+    }
+
+    .swiper {
+        width: 80%;
+    }
+
+    .swiper-pagination {
+        margin: 1rem 0;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: block;
+    }
+
+    .card {
+        margin: 3.75em 2rem;
+    }
+
+
+}
